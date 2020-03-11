@@ -1,0 +1,29 @@
+.header-content {
+  position: relative;
+
+  &__title {
+    text-align: center;
+
+    @media (min-width: 992px) {
+      font-size: 3.75rem;
+    }
+    @media (max-width: 991px) and (min-width: 768px) {
+      margin: 0 0 43px;
+    }
+    @media (max-width: 767px) {
+      margin: 0 0 43px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+
+    .btn:not(:last-of-type) {
+      margin-right: $gap;
+    }
+  }
+  &__container {
+    @extend %container;
+  }
+}
